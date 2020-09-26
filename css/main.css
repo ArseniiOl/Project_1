@@ -1,0 +1,398 @@
+@font-face {
+    font-family: "Myriad Pro";
+    src: local("Myriad Pro"), url("../fonts/MyriadPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Myriad Pro-Bold";
+    src: local("Myriad Pro-Bold"), url("../fonts/MyriadPro-Bold.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial;
+    min-width: 320px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    display: block;
+}
+
+button{
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (min-width: 960px) {
+    .container {
+        width: 960px;
+        padding: 0;
+    }
+}
+
+
+/* HEADER */
+
+header {
+   height: auto;
+    background-color: #333;
+    width: 100%;
+}
+
+@media (min-width: 960px) {
+    header {
+        height: 133px;
+    }
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+    padding-top: 20px;
+}
+
+@media (min-width: 960px) {
+    header .container {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+.logo {
+    font-size: 50px;
+    font-family: "Myriad Pro";
+    color: #fff;
+    line-height: 1;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+@media (min-width: 960px) {
+    .logo {
+        font-size: 60px;
+        line-height: 0.267;
+    }
+}
+
+.nav{
+    padding: 0;
+    margin: 0;
+    display:block;
+    padding-top: 45px;
+
+}
+
+.menu li{
+    display: inline-block;
+    margin-right: 11px;
+    color:#fff;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 960px) {
+    .menu li {
+       padding-bottom: 0;
+    }
+}
+
+.menu li a{
+    color: #fff;
+    font-size: 16px;
+}
+
+.menu li a:hover {
+    color: #0e8dbd;
+}
+
+/* SECTION 1 */
+
+.section1 {
+    padding-top: 50px;
+}
+
+@media (min-width: 960px) {
+    .main_title {
+        padding-top: 90px;
+    }
+}
+
+.main_title {
+    font-size: 40px;
+    font-family: "Myriad Pro-Bold";
+    color: #333;
+    font-weight: 700;
+}
+
+@media (min-width: 960px) {
+    .main_title {
+        font-size: 60px;
+    }
+}
+
+.main_title span {
+    color: #00bff3;
+}
+
+.section_1_heading {
+    font-size: 30px;
+    font-family: "Myriad Pro";
+    color: #BBB;
+    font-weight: 400;
+    line-height: 1;
+    padding-bottom: 25px;
+    border-bottom: 4px dotted #ccc;
+}
+
+@media (min-width: 960px) {
+    .section_1_heading {
+        font-size: 50px;
+        padding-bottom: 32px;
+    }
+}
+
+.section_1_content {
+    padding: 25px 0;
+    font-size: 30px;
+    font-family: "Myriad Pro";
+    color: #555;
+    border-bottom: 4px dotted #ccc;
+    text-align: center;
+}
+
+@media (min-width: 960px) {
+    .section_1_content {
+        font-size: 34px;
+        padding: 36px 0;
+        text-align: left;
+    }
+}
+
+/* SECTION SERVICES */
+
+.section_services {
+    padding-top: 23px;
+}
+
+.section_services .container {
+    padding-bottom: 30px;
+    border-bottom: 4px dotted #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 960px) {
+    .section_services .container {
+       flex-direction: row;
+        padding-bottom: 50px;
+    }
+}
+
+.services_box {
+    background-color: #00aeef;
+    max-width: 280px;
+    color: #fff;
+    padding:25px 20px 35px;
+    margin: 10px auto;
+}
+
+@media (min-width: 960px) {
+    .services_box {
+        margin: 0;
+        margin-right: 60px;
+        min-width: 280px;
+    }
+}
+
+
+
+@media (min-width: 960px) {
+    .services_box:nth-child(3){
+        margin-right: 0;
+    }
+}
+
+.services_title {
+    font-size: 40px;
+    font-family: "Myriad Pro";
+    padding-bottom: 22px;
+    border-bottom: 1px dotted #fff;
+    text-align: center;
+    font-weight: 300;
+}
+
+.services_content {
+    font-family: "Myriad Pro";
+    padding: 30px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.services_button {
+    background: #0076a3;
+    border: 1px solid #15627e;
+    color: #fff;
+    display:block;
+    padding: 13px 0;
+    width:232px;
+    text-align: center;
+    font-family: "Myriad Pro";
+    font-size: 18px;
+}
+
+.services_button:hover {
+    background-image: linear-gradient(to top, #0076a3 0%, #15627e 100%)
+}
+
+/*SECTION 3 */
+
+.section_3 .container {
+    display: flex;
+    border-bottom: 4px dotted #ccc;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    flex-direction: column;
+}
+
+@media (min-width: 960px) {
+    .section_3 .container{
+        flex-direction: row;
+    }
+}
+
+/* CLIENT SECTION */
+
+
+.section_client_test {
+    border-right: none;
+    padding: 10px 30px 0 0;
+    border-bottom: 4px dotted #ccc;
+}
+
+@media (min-width: 960px) {
+    .section_client_test{
+        border-right: 4px dotted #ccc;
+        border-bottom: none;
+    }
+}
+
+.sections_3_title {
+    font-size: 24px;
+    font-family: "Myriad Pro";
+    color: #555;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+
+.testimonial {
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.client_img {
+   margin-right: 28px;
+    width: 84px;
+    height: 84px;
+}
+
+.client_information {
+    font-size: 14px;
+    font-family: "Arial";
+    color: #555;
+}
+
+.client_quote {
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+.client_name {
+    font-weight: 700;
+    line-height: 1.286;
+}
+
+.client_company {
+    color: #00aeef;
+}
+
+/* SECTION FEATURED PROJECT */
+
+.section_featured_project {
+    margin-left:0px;
+    padding-top: 10px;
+}
+
+@media (min-width: 960px) {
+    .section_featured_project {
+        margin-left:45px;
+    }
+}
+
+
+.featured_title {
+    font-size: 20px;
+    font-family: "Arial";
+    color: #888888;
+    line-height: 0.8;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.project_img {
+   max-width: 320px;
+}
+
+@media (min-width: 860px) {
+    .project_img {
+      width: auto;
+    }
+}
+
+.featured_content {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+    margin-bottom: 7px;
+    font-family: "Arial";
+}
+
+@media (min-width: 860px) {
+    .featured_content {
+        max-width: 440px;
+    }
+}
+
+.more {
+    color: #00aeef;
+    font-size: 14px;
+}
+
+
+footer{
+    padding-top: 17px;
+}
+
+.footer_copyright {
+    font-size: 16px;
+    color: #888;
+    padding-bottom: 20px;
+    line-height: 2;
+}
